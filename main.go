@@ -24,7 +24,6 @@ type RequestData struct {
 	Items    []Item `json:"items"`
 }
 
-// ---------- Logic ----------
 func fractionalKnapsack(items []Item, capacity int) (float64, string) {
 	gItems := make([]GreedyItem, len(items))
 
